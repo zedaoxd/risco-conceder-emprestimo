@@ -57,7 +57,7 @@ base_creditos['age'].fillna(base_creditos['age'].mean(), inplace=True)
 # In[7]:
 
 
-X_credito = base_creditos.iloc[:, 1:4].values  # transformando as colunas 0 a 3 em uma lista numpy (array)
+X_credito = base_creditos.iloc[:, 1:4].values  # transformando as colunas 1 a 3 em uma lista numpy (array)
 
 
 # In[8]:
@@ -116,46 +116,3 @@ print(classification_report(y_teste, previsoes))
 
 grafico = px.scatter_matrix(base_creditos, dimensions=['age', 'income'], color='default')
 grafico.show()
-
-
-# In[ ]:
-
-
-
-
-
-# In[ ]:
-
-
-
-
-
-# In[ ]:
-
-
-
-
-
-# In[ ]:
-
-
-
-
-
-# In[ ]:
-
-
-
-
-
-# In[ ]:
-
-
-
-
-
-# In[ ]:
-
-
-
-
